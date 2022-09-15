@@ -1,3 +1,6 @@
+const App = require('./app.js');
+
 window.onload = () => {
-    alert('Bem-vindo!');
+    const main = document.querySelector('main');
+    new App(main).init();
 };
